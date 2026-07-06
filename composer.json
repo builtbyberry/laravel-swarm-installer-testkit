@@ -1,0 +1,48 @@
+{
+    "name": "builtbyberry/laravel-swarm-installer-testkit",
+    "description": "Shared Testbench-based test harness for `swarm:install*` command test suites across Laravel Swarm and its companion packages.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Daniel Berry"
+        }
+    ],
+    "require": {
+        "php": "^8.5",
+        "illuminate/console": "^13.0",
+        "illuminate/contracts": "^13.0",
+        "illuminate/filesystem": "^13.0",
+        "illuminate/support": "^13.0",
+        "orchestra/testbench": "^11.1"
+    },
+    "require-dev": {
+        "larastan/larastan": "^3.10",
+        "laravel/pint": "^1.29",
+        "pestphp/pest": "^4.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "BuiltByBerry\\LaravelSwarmInstallerTestkit\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "BuiltByBerry\\LaravelSwarmInstallerTestkit\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "analyse": "vendor/bin/phpstan analyse --memory-limit=2G --no-progress",
+        "format": "vendor/bin/pint",
+        "lint": "vendor/bin/pint --test",
+        "test": "vendor/bin/pest"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
