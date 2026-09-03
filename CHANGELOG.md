@@ -2,6 +2,12 @@
 
 All notable changes to `laravel-swarm-installer-testkit` will be documented in this file.
 
+## v0.1.3 — 2026-09-03
+
+Compatibility release. Lowers the PHP requirement from `^8.5` to `^8.4` and
+tests both PHP 8.4 and 8.5 against the latest and lowest supported dependency
+sets. No harness behavior changed.
+
 ## v0.1.2 — 2026-07-06
 
 Documentation only. Backfilled the `v0.1.1` changelog entry above — that CI-fix
