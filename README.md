@@ -5,6 +5,8 @@ test suites. Extracted from `builtbyberry/laravel-swarm` so companion
 packages (`builtbyberry/laravel-swarm-pulse` and others) can `require-dev`
 it directly instead of duplicating the harness.
 
+Requires PHP 8.4 or newer.
+
 This package is `require-dev`-only. It requires `orchestra/testbench`
 directly (rather than through a consumer's own `require-dev`) since testing
 Artisan installer commands is this package's entire purpose.
